@@ -1,5 +1,6 @@
 /* Universal Style */
-.header, body {
+header, 
+body {
 	font-family: Helvetica;
 	font-size: 22px;
 	color: seashell;
@@ -16,6 +17,8 @@ header {
 	position: fixed;
 	width: 100%;
 	justify-content: space-between;
+	z-index: 3;
+	opacity: 1;
 }
 
 .logo img {
@@ -30,4 +33,37 @@ header {
 	align-items: center;
 	width: 20%;
 	justify-content: space-between;
+	color: seashell;
 }
+
+/* Main Body Styles */ 
+
+.mission {
+	position: relative;
+	display: flex;
+	height: 700px;
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	justify-content: center;
+	background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	flex-grow: 1;
+	overflow: hide;
+	border-left: 40px solid black;
+	border-right: 40px solid black;
+	border-bottom: 40px solid black;
+}
+
+.statement {
+	text-align: center;
+	background-color: black;
+	z-index: 2;
+	flex-grow: 1;
+
+}
+
